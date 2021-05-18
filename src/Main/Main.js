@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import Header from '../Header/Header';
-import './Landing.scss';
+import './Main.scss';
 
-function Landing() {
+function Main() {
 
     useEffect(function onFirstMount() {
 
@@ -28,8 +28,8 @@ function Landing() {
   return (
     <>
     <Header />
-    <div className="Landing">
-      <p className="Landing-header">
+    <div className="Main">
+      <p className="Main-header">
         Welcome
       </p>
         <div id="projects">Projects</div>
@@ -40,4 +40,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Main;

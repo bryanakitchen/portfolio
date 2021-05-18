@@ -3,7 +3,7 @@ import {
   Route, 
   Switch
 } from 'react-router-dom';
-import Landing from './Landing/Landing.js';
+import Main from './Main/Main.js';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/'
-           render={(routerProps) => <Landing
+           render={(routerProps) => <Main
             {...routerProps}/>} 
           />
         </Switch>
