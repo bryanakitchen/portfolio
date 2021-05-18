@@ -5,6 +5,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // transition: 0.2s;
+    z-index: 1;
 
     .logo {
 
@@ -50,3 +55,8 @@
     }
 
 }
+
+.sticky {
+    border: solid 2px blue;
+}
+
