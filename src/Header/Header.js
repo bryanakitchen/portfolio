@@ -5,14 +5,16 @@ export default function Header() {
     return (
         <div className='Header'>
             <div className="logo">
-                <img src='./logo.png' alt='logo with b' />
+                <a href='/'>
+                    <img src='./logo.png' alt='logo with b' />
+                </a>
             </div>
 
             <div className="nav">
                 <a href='/'>Home</a>
-                <a href='/'>Projects</a>
-                <a href='/'>Mission</a>
-                <a href='/'>Contact</a>
+                <a href='#projects'>Projects</a>
+                <a href='#mission'>Mission</a>
+                <a href='#contact'>Contact</a>
             </div>
         </div>
     )

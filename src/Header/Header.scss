@@ -10,6 +10,7 @@
 
         img {
             height: 40px;
+            cursor: pointer;
         }
 
         // p {
@@ -31,14 +32,21 @@
         a {
             padding: 0px 10px;
             margin: 0px 5px;
+            text-decoration: none;
         }
     }
 
-    .nav:hover a {
-
-        // span {
-            cursor: pointer;
-            border-bottom: solid 1px #141c3a;
-        // }
+    a {
+        text-decoration: none;
+        color: #141c3a;
     }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    a:hover span {
+        text-decoration: none;
+    }
+
 }

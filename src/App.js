@@ -1,15 +1,21 @@
-import Header from './Header/Header';
-import './App.css';
+import {
+  BrowserRouter as Router, 
+  Route, 
+  Switch
+} from 'react-router-dom';
+import Landing from './Landing/Landing.js';
 
 function App() {
   return (
     <>
-    <Header />
-    <div className="App">
-      <p className="App-header">
-        Welcome
-      </p>
-    </div>
+      <Router>
+        <Switch>
+          <Route exact path='/'
+           render={(routerProps) => <Landing
+            {...routerProps}/>} 
+          />
+        </Switch>
+      </Router>
     </>
   );
 }
