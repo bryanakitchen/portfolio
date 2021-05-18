@@ -1,0 +1,44 @@
+.Header {
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(199, 199, 199, 0.452);
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo {
+
+        img {
+            height: 40px;
+        }
+
+        // p {
+        //     padding: 0px;
+        //     margin: 0px;
+        //     border: solid 1px #141c3a;
+        //     border-radius: 50%;
+        //     height: 25px;
+        //     width: 25px;
+        //     background-color: #141c3a;
+        //     color: white;
+        // }
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+
+        a {
+            padding: 0px 10px;
+            margin: 0px 5px;
+        }
+    }
+
+    .nav:hover a {
+
+        // span {
+            cursor: pointer;
+            border-bottom: solid 1px #141c3a;
+        // }
+    }
+}
