@@ -10,6 +10,32 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #282c34;
+
+    .arrow {
+      position:absolute;
+      bottom: 0;
+      -webkit-animation-name: bounce;
+      -webkit-animation-duration: 0.7s;
+      -webkit-animation-direction: alternate;
+      -webkit-animation-timing-function: cubic-bezier(
+        0.1, -0.6, 0.1);
+      -webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce {
+      from {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+      }
+      to {
+          -webkit-transform: translate3d(0, -25px, 0);
+          transform: translate3d(0, -25px, 0);
+      }
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
 }
 
 /* background-color: #282c34; */
