@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import About from '../About/About';
 import Header from '../Header/Header';
 import Mission from '../Mission/Mission';
+import Projects from '../Projects/Projects';
 import './Main.scss';
 
 function Main() {
@@ -49,6 +50,7 @@ function Main() {
 
     <About />
     <Mission />
+    <Projects />
     
      <div >
         <div id="projects">Projects</div>
