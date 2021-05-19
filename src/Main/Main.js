@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import About from '../About/About';
 import Header from '../Header/Header';
+import Mission from '../Mission/Mission';
 import './Main.scss';
 
 function Main() {
@@ -47,11 +48,12 @@ function Main() {
     </div>
 
     <About />
+    <Mission />
     
      <div >
         <div id="projects">Projects</div>
         <div id="mission">Mission</div>
-        <div id="contact">Mission</div>
+        <div id="contact">Contact</div>
     </div>
     </>
   );

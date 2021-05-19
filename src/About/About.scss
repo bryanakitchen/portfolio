@@ -10,8 +10,12 @@
     background-color: #141c3a;
     color: #fff;
 
-    h3, p {
+    p {
         font-size: 1.3rem;
+    }
+    
+    p:first-of-type {
+        font-size: 1.8rem;
     }
 
 }
