@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import About from '../About/About';
 import Header from '../Header/Header';
 import './Main.scss';
 
@@ -44,15 +45,10 @@ function Main() {
         </div>
       </div>
     </div>
-    
-    <div className="about">
-      <div >
-        <h3>Hi, I'm Bryana. It's nice to meet you!</h3>
-        <p>
-          I'm a full stack software engineer who loves making environments more organized.
-        </p>
-      </div>
 
+    <About />
+    
+     <div >
         <div id="projects">Projects</div>
         <div id="mission">Mission</div>
         <div id="contact">Mission</div>
