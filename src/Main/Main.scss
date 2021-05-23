@@ -73,8 +73,6 @@
 
 @media (max-width: 992px) {
   .Landing {
-    // border: solid orange 3px;
-
     .arrow {
       margin-bottom: 15px;
     }
@@ -88,5 +86,21 @@
     .arrow {
       margin-bottom: 10px;
     }
+
+    .landing-logo {
+      width: 3rem;
+      height: 3rem;
+  
+    }
+
+    .name {
+      font-size: 3rem;
+      margin: 14px 0px;
+    }
+
+    .title {
+      font-size: 16px;
+    }
+  
   }
 }

@@ -8,7 +8,6 @@
     position: fixed;
     top: 0;
     width: 98vw;
-    // transition: 0.2s;
     z-index: 1;
 
     .logo {
@@ -52,12 +51,19 @@
 //   }
   
 @media (max-width: 992px) {
+
     .Header {
     //   border: solid orange 3px;
         width: 95vw;
         font-size: 18px;
-        margin-top: 2vh;
+        // top: 2vh;
+
+        // margin-top: 2vh;
     }
+
+    // .headerQuery {
+    //     top: 0;
+    // }
 }
   
 @media (max-width: 600px) {

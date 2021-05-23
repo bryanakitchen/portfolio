@@ -12,14 +12,14 @@ function Main() {
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
-        // const header = document.getElementById("Header");
+        // const header = document.querySelector(".Header");
         const arrow = document.querySelector(".arrow");
 
           if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            // header.classList.add("sticky");
+            // header.classList.remove("headerQuery");
             arrow.classList.add("hidden");
           } else {
-            // header.classList.remove("sticky");
+            // header.classList.add("headerQuery");
             arrow.classList.remove("hidden");
           }
         }
