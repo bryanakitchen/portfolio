@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
@@ -45,7 +46,9 @@ function Main() {
           <p className="title">Full Stack Software Engineer | Organization Aficionado</p>
 
           <div className="arrow">
-            <img src="./arrow.png" alt="down arrow" />
+            <Link activeClass="active" to="about" smooth={true} >
+              <img src="./arrow.png" alt="down arrow" />
+            </Link>
           </div>
         </div>
       </div>
