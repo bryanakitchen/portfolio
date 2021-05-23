@@ -1,4 +1,4 @@
-.projects {
+.Projects {
   min-height: 90vh;
   margin-top: -10vh;
   display: flex;
@@ -112,3 +112,18 @@ button {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+// @media (max-width: 1024px) {
+  // .Projects {
+  // }
+//   }
+  
+// @media (max-width: 992px) {
+//   .Projects {
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .Projects {
+//   }
+// }

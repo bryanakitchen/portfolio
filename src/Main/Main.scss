@@ -63,12 +63,22 @@
     font-size: 4rem;
     margin: 14px 0px;
   }
-  
+
+  .title {
+    margin: 0;
+  }
+
 }
 
-.title {
-  margin: 0;
+.footer {
+  background-color: #fff;
+  color: #141c3a;
+  // background-color: #141c3a;
+  // color: #fff;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
 }
+
 
 // @media (max-width: 1024px) {
 //   .Landing {
@@ -82,6 +92,10 @@
     .arrow {
       margin-bottom: 15px;
     }
+  }
+
+  .footer {
+    font-size: 1.2rem;
   }
 }
 
@@ -107,6 +121,10 @@
     .title {
       font-size: 16px;
     }
-  
   }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+
 }

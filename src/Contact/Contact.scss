@@ -6,11 +6,12 @@
 }
 
 .Contact {
-    min-height: 70vh;
+    min-height: 30vh;
     margin: 0;
     padding: 0;
 
     background-color: #fff;
+    // background-color: #141c3a;
     color: #141c3a;
 
     p {
@@ -38,7 +39,7 @@
 
     .inner {
         width: 80vw;
-        height: 60vh;
+        height: 40vh;
         margin-top: -20vh;
         background-color: #fff;
         text-align: center;
@@ -58,29 +59,31 @@
  
 @media (max-width: 992px) {
     .Contact {
-        p {
-            font-size: 1.4rem;
-            margin: 10px;
-        }
-
-        p:first-of-type {
-            margin-bottom: 20px;
+        .inner {
+            p {
+                font-size: 1.4rem;
+                margin: 10px;
+            }
+    
+            p:first-of-type {
+                margin-bottom: 20px;
+            }
         }
     }
-
 }
  
 @media (max-width: 600px) {
     .Contact {
-        p {
-            font-size: 1rem;
-            margin: 5px;
-        }
-
-        p:first-of-type {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+        .inner {
+            p {
+                font-size: 1rem;
+                margin: 5px;
+            }
+    
+            p:first-of-type {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
         }
     }
-
 }

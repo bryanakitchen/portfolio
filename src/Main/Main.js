@@ -34,29 +34,30 @@ function Main() {
 
   return (
     <>
-    <Header />
-    <div className="Landing" name="home">
-      <div className="landing-group">
-        <div className="landing-header">
-          <img src="./logo.png" alt="letter b logo" className="landing-logo" />
-          <p className="name">ryana Kitchen</p>
-        </div>
-        <p className="title">Full Stack Software Engineer | Organization Aficionado</p>
+      <Header />
+      
+      <div className="Landing" name="home">
+        <div className="landing-group">
+          <div className="landing-header">
+            <img src="./logo.png" alt="letter b logo" className="landing-logo" />
+            <p className="name">ryana Kitchen</p>
+          </div>
+          <p className="title">Full Stack Software Engineer | Organization Aficionado</p>
 
-        <div className="arrow">
-          <img src="./arrow.png" alt="down arrow" />
+          <div className="arrow">
+            <img src="./arrow.png" alt="down arrow" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <About />
-    <Mission />
-    <Projects />
-    <Contact />
-    
-     <div className="footer">
-        <p>&#169; 2021 Bryana Kitchen </p>
-    </div>
+      <About />
+      <Mission />
+      <Projects />
+      <Contact />
+      
+      <div className="footer">
+          <p>Handcrafted by me &#169; 2021 </p>
+      </div>
     </>
   );
 }
