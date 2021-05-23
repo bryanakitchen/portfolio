@@ -1,5 +1,9 @@
 import { useEffect } from 'react';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
+import Mission from '../Mission/Mission';
+import Projects from '../Projects/Projects';
 import './Main.scss';
 
 function Main() {
@@ -9,14 +13,14 @@ function Main() {
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
-        const header = document.getElementById("Header");
-        const arrow = document.getElementById("arrow");
+        // const header = document.querySelector(".Header");
+        const arrow = document.querySelector(".arrow");
 
           if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            header.classList.add("sticky");
+            // header.classList.remove("headerQuery");
             arrow.classList.add("hidden");
           } else {
-            header.classList.remove("sticky");
+            // header.classList.add("headerQuery");
             arrow.classList.remove("hidden");
           }
         }
@@ -31,16 +35,29 @@ function Main() {
   return (
     <>
     <Header />
-    <div className="Main">
-      <div className="Main-header">
-        <p>Welcome</p>
-        <div className="arrow" id="arrow">
+    <div className="Landing">
+      <div className="landing-group">
+        <div className="landing-header">
+          <img src="./logo.png" alt="letter b logo" className="landing-logo" />
+          <p className="name">ryana Kitchen</p>
+        </div>
+        <p className="title">Full Stack Software Engineer | Organization Aficionado</p>
+
+        <div className="arrow">
           <img src="./arrow.png" alt="down arrow" />
         </div>
       </div>
+    </div>
+
+    <About />
+    <Mission />
+    <Projects />
+    <Contact />
+    
+     <div >
         <div id="projects">Projects</div>
         <div id="mission">Mission</div>
-        <div id="contact">Mission</div>
+        <div id="contact">Contact</div>
     </div>
     </>
   );

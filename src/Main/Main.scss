@@ -1,15 +1,15 @@
-.Main {
+.Landing {
   text-align: center;
 }
 
-.Main-header {
+.landing-group {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #282c34;
+  color: #141c3a;
 
     .arrow {
       position:absolute;
@@ -38,4 +38,69 @@
     }
 }
 
-/* background-color: #282c34; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+.landing-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  .landing-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin: 14px 0px;
+  }
+  
+}
+
+.title {
+  margin: 0;
+}
+
+// @media (max-width: 1024px) {
+//   .Landing {
+//     // border: solid pink 3px;
+//     // max-width: fit-content;
+//   }
+// }
+
+@media (max-width: 992px) {
+  .Landing {
+    .arrow {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Landing {
+    // border: solid yellow 3px;
+
+    .arrow {
+      margin-bottom: 10px;
+    }
+
+    .landing-logo {
+      width: 3rem;
+      height: 3rem;
+  
+    }
+
+    .name {
+      font-size: 3rem;
+      margin: 14px 0px;
+    }
+
+    .title {
+      font-size: 16px;
+    }
+  
+  }
+}
