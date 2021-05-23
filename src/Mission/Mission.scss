@@ -10,16 +10,16 @@
     margin: 0;
     padding: 0;
 
-    background-color: #fff;
+    background-color: #141c3a;
     color: #141c3a;
 
-    h3, p {
+    p {
         font-size: 1.3rem;
     }
 
     .inner {
         width: 80vw;
-        height: 60vh;
+        height: 45vh;
         margin-top: -20vh;
         background-color: #fff;
         text-align: center;
@@ -33,6 +33,7 @@
 
         p:first-of-type {
             font-size: 1.8rem;
+            margin-top: 0;
         }
 
     }
@@ -47,6 +48,8 @@
 @media (max-width: 992px) {
     .Mission {
         .inner {
+            height: 50vh;
+
             p {
                 width: 90%;
             }
@@ -62,6 +65,8 @@
 @media (max-width: 600px) {
     .Mission {
         .inner {
+            height: 60vh;
+
             p {
                 width: 90%;
                 font-size: 1.1rem;

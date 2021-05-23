@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
 import Mission from '../Mission/Mission';
 import Projects from '../Projects/Projects';
@@ -51,6 +52,7 @@ function Main() {
     <About />
     <Mission />
     <Projects />
+    <Contact />
     
      <div >
         <div id="projects">Projects</div>
