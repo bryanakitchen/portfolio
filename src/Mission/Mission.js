@@ -3,7 +3,7 @@ import './Mission.scss';
 
 export default function Mission() {
     return (
-        <div className="mission">
+        <div className="Mission">
             <div className="inner">
                 <p>Mission</p>
                 <p>

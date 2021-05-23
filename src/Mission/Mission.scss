@@ -1,12 +1,12 @@
-.mission, .inner {
+.Mission, .inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.mission {
-    min-height: 60vh;
+.Mission {
+    min-height: 70vh;
     margin: 0;
     padding: 0;
 
@@ -20,7 +20,7 @@
     .inner {
         width: 80vw;
         height: 60vh;
-        margin-top: -10vh;
+        margin-top: -20vh;
         background-color: #fff;
         text-align: center;
         
@@ -37,4 +37,39 @@
 
     }
 
+}
+
+// @media (max-width: 1024px) {
+//     .About {
+//     }
+//   }
+  
+@media (max-width: 992px) {
+    .Mission {
+        .inner {
+            p {
+                width: 90%;
+            }
+    
+            p:first-of-type {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+}
+  
+@media (max-width: 600px) {
+    .Mission {
+        .inner {
+            p {
+                width: 90%;
+                font-size: 1.1rem;
+            }
+    
+            p:first-of-type {
+                font-size: 1.4rem;
+            }
+        }
+    }
 }
