@@ -14,6 +14,12 @@
     .arrow {
       position:absolute;
       bottom: 0;
+      animation-name: bounce;
+      animation-duration: 0.7s;
+      animation-direction: alternate;
+      animation-timing-function: cubic-bezier(
+        0.1, -0.6, 0.1);
+      animation-iteration-count: infinite;
       -webkit-animation-name: bounce;
       -webkit-animation-duration: 0.7s;
       -webkit-animation-direction: alternate;
