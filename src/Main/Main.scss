@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.Landing-group {
+.landing-group {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 
-.Landing-header {
+.landing-header {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -62,4 +62,31 @@
 
 .title {
   margin: 0;
+}
+
+// @media (max-width: 1024px) {
+//   .Landing {
+//     // border: solid pink 3px;
+//     // max-width: fit-content;
+//   }
+// }
+
+@media (max-width: 992px) {
+  .Landing {
+    // border: solid orange 3px;
+
+    .arrow {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Landing {
+    // border: solid yellow 3px;
+
+    .arrow {
+      margin-bottom: 10px;
+    }
+  }
 }

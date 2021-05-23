@@ -13,7 +13,7 @@ function Main() {
         
         function scrollFunction() {
         // const header = document.getElementById("Header");
-        const arrow = document.getElementById("arrow");
+        const arrow = document.querySelector(".arrow");
 
           if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             // header.classList.add("sticky");
@@ -35,14 +35,14 @@ function Main() {
     <>
     <Header />
     <div className="Landing">
-      <div className="Landing-group">
-        <div className="Landing-header">
+      <div className="landing-group">
+        <div className="landing-header">
           <img src="./logo.png" alt="letter b logo" className="landing-logo" />
           <p className="name">ryana Kitchen</p>
         </div>
         <p className="title">Full Stack Software Engineer | Organization Aficionado</p>
 
-        <div className="arrow" id="arrow">
+        <div className="arrow">
           <img src="./arrow.png" alt="down arrow" />
         </div>
       </div>

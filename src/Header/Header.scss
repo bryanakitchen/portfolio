@@ -7,17 +7,15 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 98vw;
     // transition: 0.2s;
     z-index: 1;
 
     .logo {
-
         img {
             height: 40px;
             cursor: pointer;
         }
-
     }
 
     .nav {
@@ -46,7 +44,31 @@
 
 }
 
-.sticky {
-    border: solid 2px blue;
-}
 
+// @media (max-width: 1024px) {
+//     .Header {
+//     //   border: solid pink 3px;
+//     }
+//   }
+  
+@media (max-width: 992px) {
+    .Header {
+    //   border: solid orange 3px;
+        width: 95vw;
+        font-size: 18px;
+        margin-top: 2vh;
+    }
+}
+  
+@media (max-width: 600px) {
+    .Header {
+    //   border: solid yellow 3px;
+        width: 97.5vw;
+        font-size: 14px;
+        padding: 5px 5px;
+        
+        .nav a {
+            padding: 0px 6px;
+        }
+    }
+}
