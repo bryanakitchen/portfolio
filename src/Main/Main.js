@@ -35,7 +35,7 @@ function Main() {
   return (
     <>
     <Header />
-    <div className="Landing">
+    <div className="Landing" name="home">
       <div className="landing-group">
         <div className="landing-header">
           <img src="./logo.png" alt="letter b logo" className="landing-logo" />
@@ -54,10 +54,8 @@ function Main() {
     <Projects />
     <Contact />
     
-     <div >
-        <div id="projects">Projects</div>
-        <div id="mission">Mission</div>
-        <div id="contact">Contact</div>
+     <div className="footer">
+        <p>&#169; 2021 Bryana Kitchen </p>
     </div>
     </>
   );

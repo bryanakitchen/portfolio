@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Header.scss'
 
 export default function Header() {
@@ -11,10 +12,10 @@ export default function Header() {
             </div>
 
             <div className='nav'>
-                <a href='/'>Home</a>
-                <a href='#mission'>About</a>
-                <a href='#projects'>Projects</a>
-                <a href='#contact'>Contact</a>
+                <Link activeClass="active" to="home" >Home</Link>
+                <Link activeClass="active" to="about" >About</Link>
+                <Link activeClass="active" to="projects" >Projects</Link>
+                <Link activeClass="active" to="contact" >Contact</Link>
             </div>
         </div>
     )

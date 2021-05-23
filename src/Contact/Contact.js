@@ -3,7 +3,7 @@ import './Contact.scss';
 
 export default function Contact() {
     return (
-        <div className="Contact">
+        <div className="Contact" name="contact">
             <div className="inner">
                 <p>Let's connect</p>
                 <p>

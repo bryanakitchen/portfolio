@@ -21,23 +21,23 @@
         display: flex;
         align-items: center;
 
-        a {
+        a, Link {
             padding: 0px 10px;
             margin: 0px 5px;
             text-decoration: none;
         }
     }
 
-    a {
+    a, Link {
         text-decoration: none;
         color: #141c3a;
     }
     
-    a:hover {
+    a:hover, Link:hover {
         text-decoration: underline;
     }
     
-    a:hover span {
+    a:hover span, Link:hover span {
         text-decoration: none;
     }
 

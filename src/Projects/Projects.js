@@ -36,7 +36,7 @@ export default function Projects() {
     // }
 
     return (
-        <div className="projects">
+        <div className="projects" name="projects">
 
             <p>Selected Projects</p>
             {/* <p>Another line?</p> */}
