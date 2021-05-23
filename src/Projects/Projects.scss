@@ -1,12 +1,13 @@
 .Projects {
-  min-height: 90vh;
-  margin-top: -10vh;
+  min-height: 115vh;
+  // margin-top: -10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
+  // border: solid green 1px;
 
   background-color: #141c3a;
   color: #fff;
@@ -120,10 +121,24 @@ button {
   
 // @media (max-width: 992px) {
 //   .Projects {
+//     p {
+//       font-size: 1.3rem;
+//     }
+
+//     p:first-of-type {
+//       font-size: 1.8rem;
+//     }
 //   }
 // }
 
-// @media (max-width: 600px) {
-//   .Projects {
-//   }
-// }
+@media (max-width: 600px) {
+  .Projects {
+    p {
+      font-size: 1.1rem;
+    }
+
+    p:first-of-type {
+      font-size: 1.5rem;
+    }
+  }
+}

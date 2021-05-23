@@ -39,7 +39,7 @@ export default function Projects() {
         <div className="Projects" name="projects">
 
             <p>Selected Projects</p>
-            {/* <p>Another line?</p> */}
+            <p>Coming soon...</p>
 
             {/* <div className="slideshow-container">
 
