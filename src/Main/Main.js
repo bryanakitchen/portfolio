@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
@@ -34,31 +35,32 @@ function Main() {
 
   return (
     <>
-    <Header />
-    <div className="Landing">
-      <div className="landing-group">
-        <div className="landing-header">
-          <img src="./logo.png" alt="letter b logo" className="landing-logo" />
-          <p className="name">ryana Kitchen</p>
-        </div>
-        <p className="title">Full Stack Software Engineer | Organization Aficionado</p>
+      <Header />
+      
+      <div className="Landing" name="home">
+        <div className="landing-group">
+          <div className="landing-header">
+            <img src="./logo.png" alt="letter b logo" className="landing-logo" />
+            <p className="name">ryana Kitchen</p>
+          </div>
+          <p className="title">Full Stack Software Engineer | Organization Aficionado</p>
 
-        <div className="arrow">
-          <img src="./arrow.png" alt="down arrow" />
+          <div className="arrow">
+            <Link activeClass="active" to="about" smooth={true} >
+              <img src="./arrow.png" alt="down arrow" />
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
 
-    <About />
-    <Mission />
-    <Projects />
-    <Contact />
-    
-     <div >
-        <div id="projects">Projects</div>
-        <div id="mission">Mission</div>
-        <div id="contact">Contact</div>
-    </div>
+      <About />
+      <Mission />
+      <Projects />
+      <Contact />
+      
+      <div className="footer">
+          <p>Handcrafted by me &#169; 2021 </p>
+      </div>
     </>
   );
 }
