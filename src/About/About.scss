@@ -1,4 +1,4 @@
-.about {
+.About {
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -12,10 +12,45 @@
 
     p {
         font-size: 1.3rem;
+        padding: 0 20vw;
+        // text-indent: 50px;
+        text-align: center;
     }
     
     p:first-of-type {
         font-size: 1.8rem;
+        text-indent: 0;
     }
 
+}
+
+// @media (max-width: 1024px) {
+//     .About {
+//     }
+//   }
+  
+@media (max-width: 992px) {
+
+    .About {
+        p {
+            padding: 0 15vw;
+            margin: 0 0 3vh 0;
+        }
+    }
+
+}
+  
+@media (max-width: 600px) {
+    .About {
+        p {
+            font-size: 14px;
+            // text-indent: 20px;
+            margin: 0 0 3vh 0;
+        }
+        
+        p:first-of-type {
+            font-size: 20px;
+        }
+    
+    }
 }
