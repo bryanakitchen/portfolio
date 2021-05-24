@@ -27,7 +27,7 @@ export default function Header() {
                 <Link activeClass="active" 
                     to="contact" 
                     smooth={true}
-                    className="nav-link">Contact</Link>
+                    className="nav-link">Connect</Link>
             </div>
         </div>
     )

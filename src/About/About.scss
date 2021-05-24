@@ -21,7 +21,6 @@
         font-size: 1.8rem;
         text-indent: 0;
     }
-
 }
 
 // @media (max-width: 1024px) {
@@ -42,14 +41,16 @@
   
 @media (max-width: 600px) {
     .About {
+        min-height: 75vh;
+        margin-top: 3vh;
+
         p {
-            font-size: 15px;
-            // text-indent: 20px;
+            font-size: 1.1rem;
             margin: 0 0 2vh 0;
         }
         
         p:first-of-type {
-            font-size: 20px;
+            font-size: 1.3rem;
         }
     
     }
