@@ -1,117 +1,135 @@
-.Projects {
-  min-height: 115vh;
-  // margin-top: -10vh;
+.Projects-Body {
+  min-height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  // border: solid green 1px;
-
+  justify-content: flex-start;
   background-color: #141c3a;
   color: #fff;
 
-  p {
-      font-size: 1.3rem;
-  }
-  
-  p:first-of-type {
+  .Projects {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    h2 {
+      font-weight: normal;
       font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      width: 500px;
+      margin: 3vh;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: gainsboro;
+      }
+    }
+
+    .links {
+      text-align: center;
+    }
+    
+    .slideshow-container {
+      max-width: 80vw;
+      position: relative;
+      margin: auto;
+      
+      -webkit-animation-name: player;
+      -webkit-animation-duration: 1.5s;
+      animation-name: player;
+      animation-duration: 1.5s;
+      
+      @-webkit-keyframes player {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes player {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+    }
+    
+    button {
+      padding: 0;
+      border: none;
+      background: none;
+    }
+      
+      /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+      
+      /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    // .text {
+    //   color: #f2f2f2;
+    //   font-size: 15px;
+    //   padding: 8px 12px;
+    //   position: absolute;
+    //   bottom: 8px;
+    //   width: 100%;
+    //   text-align: center;
+    // }
+    
+    /* The dots/bullets/indicators */
+    // .dot {
+    //   cursor: pointer;
+    //   height: 15px;
+    //   width: 15px;
+    //   margin: 0 2px;
+    //   background-color: #bbb;
+    //   border-radius: 50%;
+    //   display: inline-block;
+    //   transition: background-color 0.6s ease;
+    // }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    
   }
 
-}
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-
-  background-color: #fff;
-  color: #141c3a;
-
-}
-
-button {
-  padding: 0;
-  border: none;
-  background: none;
-}
-  
-  /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-  
-  /* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
 }
 
 // @media (max-width: 1024px) {
@@ -120,25 +138,32 @@ button {
 //   }
   
 // @media (max-width: 992px) {
-//   .Projects {
-//     p {
-//       font-size: 1.3rem;
-//     }
+//   .Projects-Body {
+//     max-width: 80%;
 
-//     p:first-of-type {
-//       font-size: 1.8rem;
-//     }
+// p {
+//   margin: 1vh;
+
+// }
+    
 //   }
 // }
 
-@media (max-width: 600px) {
-  .Projects {
-    p {
-      font-size: 1.1rem;
-    }
+// @media (max-width: 600px) {
+//   .Projects-Body {
+//     border: solid pink 4px;
+//     width: 100vw;
 
-    p:first-of-type {
-      font-size: 1.5rem;
-    }
-  }
-}
+//     // p {
+//     //   font-size: 1.1rem;
+//     // }
+
+//     // p:first-of-type {
+//     //   font-size: 1.5rem;
+//     // }
+
+//     .slideshow-container {
+//       width: 90vw;
+//     }
+//   }
+// }
