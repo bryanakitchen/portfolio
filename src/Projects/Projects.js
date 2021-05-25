@@ -17,7 +17,12 @@ export default function Projects() {
                 <h2>Selected Projects</h2>
 
                 <div className="slideshow-container">
-                    <ReactPlayer url={projectsData[index].demo} controls="true" />
+                    <ReactPlayer 
+                        url={projectsData[index].demo} 
+                        controls="true"
+                        width='100%'
+                        height='100%' 
+                    />
                     <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
                     <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
                 </div>
