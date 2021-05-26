@@ -14,14 +14,11 @@ function Main() {
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
-        // const header = document.querySelector(".Header");
         const arrow = document.querySelector(".arrow");
 
           if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            // header.classList.remove("headerQuery");
             arrow.classList.add("hidden");
           } else {
-            // header.classList.add("headerQuery");
             arrow.classList.remove("hidden");
           }
         }
@@ -34,7 +31,7 @@ function Main() {
     }, []);
 
   return (
-    <>
+    <div className="App-container">
       <Header />
       
       <div className="Landing" name="home">
@@ -61,7 +58,7 @@ function Main() {
       <div className="footer">
           <p>Handcrafted by me &#169; 2021 </p>
       </div>
-    </>
+    </div>
   );
 }
 

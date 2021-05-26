@@ -51,7 +51,22 @@
         
         p:first-of-type {
             font-size: 1.3rem;
+            width: 85vw;
         }
-    
     }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 823px) {
+  .About {
+    height: 100vh;
+    padding-top: 3rem;
+
+    p {
+        font-size: 1.1rem;
+        margin: 0 0 5vh 0;
+
+    }
+  }
 }

@@ -4,7 +4,7 @@ export const projectsData = [
         demo: '/WeatherBeats.mp4',
         repo: 'https://github.com/weatherBeats',
         site: 'https://weatherbeats.netlify.app/',
-        desc: 'Using the Geolocation and Weatherbit APIs, WeatherBeats checks a user\'s current location and current weather, and provides them with weather-appropriate playlists to enjoy through the Spotify API. The user customize their search by selecting a desired weather or filter by genre to listen to playlists more catered to their taste.'
+        desc: 'Using the Geolocation and Weatherbit APIs, WeatherBeats checks a user\'s current location and current weather, and provides them with weather-appropriate playlists to enjoy through the Spotify API. The user can customize their search by selecting a desired weather type or filter by genre to listen to playlists more catered to their taste.'
     },
     {
         name: 'Aurora Synth',

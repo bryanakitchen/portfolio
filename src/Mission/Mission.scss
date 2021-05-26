@@ -65,7 +65,7 @@
 @media (max-width: 600px) {
     .Mission {
         .inner {
-            height: 60vh;
+            height: 50vh;
 
             p {
                 width: 90%;
@@ -77,4 +77,19 @@
             }
         }
     }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 823px) {
+  .Mission {
+      .inner {
+          height: 70vh;
+      
+          p {
+              font-size: 1.1rem;
+              margin: 0 0 5vh 0;
+          }
+      }
+  }
 }
