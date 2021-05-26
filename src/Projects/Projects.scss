@@ -1,14 +1,14 @@
 .Projects-Body {
-  min-height: 140vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background-color: #141c3a;
   color: #fff;
+  min-height: 140vh;
+  padding-top: 8vh;
 
-  // max-width: 100vw;
-  // border: solid yellow 2px;
+  border: solid yellow 2px;
 
 
   .Projects {
@@ -21,7 +21,7 @@
     margin: 0;
     padding: 0;
 
-    // border: solid pink 2px;
+    border: solid orange 2px;
 
     h2 {
       font-weight: normal;
