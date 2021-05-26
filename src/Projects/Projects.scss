@@ -8,12 +8,8 @@
   min-height: 140vh;
   padding-top: 8vh;
 
-  border: solid yellow 2px;
-
-
   .Projects {
-    max-width: 60vw;
-    // max-height: 60vh;
+    max-width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,11 +17,10 @@
     margin: 0;
     padding: 0;
 
-    border: solid orange 2px;
-
     h2 {
       font-weight: normal;
       font-size: 1.8rem;
+      padding-bottom: 1rem;
     }
 
     p {
@@ -51,12 +46,8 @@
     }
     
     .slideshow-container {
-      max-width: 80vw;
-      // max-height: 70vh;
       position: relative;
       margin: auto;
-
-      // border: solid orange 3px;
       
       -webkit-animation-name: player;
       -webkit-animation-duration: 1.5s;
@@ -72,7 +63,6 @@
         from {opacity: .4} 
         to {opacity: 1}
       }
-
     }
     
     button {
@@ -81,7 +71,6 @@
       background: none;
     }
       
-      /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
       position: absolute;
@@ -97,7 +86,6 @@
       user-select: none;
     }
       
-      /* Position the "next button" to the right */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
@@ -107,95 +95,52 @@
       background-color: rgba(0,0,0,0.8);
     }
     
-    /* Caption text */
-    // .text {
-    //   color: #f2f2f2;
-    //   font-size: 15px;
-    //   padding: 8px 12px;
-    //   position: absolute;
-    //   bottom: 8px;
-    //   width: 100%;
-    //   text-align: center;
-    // }
-    
-    /* The dots/bullets/indicators */
-    // .dot {
-    //   cursor: pointer;
-    //   height: 15px;
-    //   width: 15px;
-    //   margin: 0 2px;
-    //   background-color: #bbb;
-    //   border-radius: 50%;
-    //   display: inline-block;
-    //   transition: background-color 0.6s ease;
-    // }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    /* On smaller screens, decrease text size */
     @media only screen and (max-width: 300px) {
-      .prev, .next,.text {font-size: 11px}
+      .prev, .next {font-size: 11px}
     }
-    
   }
-
 }
 
-// @media (max-width: 1024px) {
-  // .Projects {
-  // }
-//   }
-  
 @media (max-width: 992px) {
   .Projects-Body {
+    min-height: 130vh;
 
     .Projects {
       max-width: 100vw;
     }
     .slideshow-container {
 
-      max-width: 80vw;
+      width: 80vw;
     }
-
-    // p {
-    //   margin: 1vh;
-
-    // }
-    
   }
 }
 
 @media (max-width: 600px) {
   .Projects-Body {
-    // border: solid pink 4px;
     width: 100vw;
 
     .Projects {
-      // border: solid yellow 2px;
       width: 95vw;
     }
-
-
-    // p {
-    //   font-size: 1.1rem;
-    // }
-
-    // p:first-of-type {
-    //   font-size: 1.5rem;
-    // }
-
-    // .slideshow-container {
-    //   width: 90vw;
-    // }
   }
 }
 
-// @media screen and (orientation:landscape)
-// and (min-device-width: 319px) 
-// and (max-device-width: 480px) {
-//    .Projects-Body {
-//        border: solid yellow 2px;
-//    }
-// }
+@media screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 823px) {
+   .Projects-Body {
+      .Projects {
+        width: 90vw;
+
+        .slideshow-container {
+          width: 55vw;
+        }
+
+        .desc {
+          p:first-of-type, .links {
+            width: 90vw;
+          }
+        }
+      }
+   }
+}

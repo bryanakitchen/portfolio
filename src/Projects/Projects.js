@@ -27,7 +27,7 @@ export default function Projects() {
                     <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
                 </div>
 
-                <div>
+                <div className="desc">
                     <p>{projectsData[index].desc}</p>
                     <p className="links">
                         <a href={projectsData[index].repo} alt={projectsData[index].repo}>GitHub</a> | <a href={projectsData[index].site} alt={projectsData[index].site}>Website</a>
