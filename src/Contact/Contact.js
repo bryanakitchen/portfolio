@@ -28,11 +28,12 @@ export default function Contact() {
                         /bryanakitchen
                     </a>
                 </p>
-                <p>
+                <p className="tooltip">
                     <a href="./Bryana-Kitchen-Resume.pdf">
                         <img src="./cv-light.png" alt="icon link to Bryana's resume" />
                         Resume
                     </a>
+                    <span className="tooltip-text">Yes, I am willing to relocate!</span>
                 </p>
                 </div>
 

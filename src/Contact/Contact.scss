@@ -59,6 +59,40 @@
                 justify-content: center;   
                 padding-bottom: 0.8vh; 
             }
+
+            .tooltip {
+                position: relative;
+            }
+
+            .tooltip .tooltip-text {
+                visibility: hidden;
+                width: 200px;
+                background-color: #141c3ae3;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 12px 6px;
+                position: absolute;
+                z-index: 1;
+                font-size: 1rem;
+                bottom: 100%;
+                right: 35%;
+              }
+
+              .tooltip:hover .tooltip-text {
+                visibility: visible;
+              }
+
+              .tooltip .tooltip-text::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #141c3ae3 transparent transparent transparent;
+              }
         }
     }
 }
