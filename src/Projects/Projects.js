@@ -1,74 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player';
+import { projectsData } from './data.js';
 import './Projects.scss';
 
 export default function Projects() {
-    // let slideIndex = 1;
-    // showSlides(slideIndex);
+    const [index, setIndex] = useState(0);
 
-    // function plusSlides(n) { 
-    //     showSlides(slideIndex += n);
-    // }
-    
-    // function currentSlide(n) {
-    //   showSlides(slideIndex = n);
-    // }
-    
-    // function showSlides(n) {
-    //   let i;
-    //   const slides = document.getElementsByClassName("mySlides");
-    //   console.log(slides);
-    //   const dots = document.getElementsByClassName("dot");
-
-    //   if (n > slides.length) {slideIndex = 1}    
-    //   if (n < 1) {slideIndex = slides.length}
-
-    //   for (i = 0; i < slides.length; i++) {
-    //       slides[i].style.display = "none";  
-    //   }
-
-    //   for (i = 0; i < dots.length; i++) {
-    //       dots[i].className = dots[i].className.replace(" active", "");
-    //   }
-    //   console.log(slides[slideIndex-1]);
-
-    //     // slides[slideIndex-1].style.display = "block";  
-    // //   dots[slideIndex-1].className += " active";
-    // }
+    let changeSlide = (increment) => {
+        const number = ((index + increment) + projectsData.length) % projectsData.length;
+        setIndex(number);
+    }  
 
     return (
-        <div className="Projects" name="projects">
+        <div className="Projects-Body" name="projects">
+            <div className="Projects">
+                <h2>Selected Projects</h2>
 
-            <p>Selected Projects</p>
-            <p>Coming soon...</p>
-
-            {/* <div className="slideshow-container">
-
-                <div className="mySlides fade">
-                    <img src="https://place-puppy.com/300x325" alt="temp alt text" />
-                    <div className="text">Caption Text</div>
+                <div className="slideshow-container">
+                    <ReactPlayer 
+                        url={projectsData[index].demo} 
+                        controls="true"
+                        width='100%'
+                        height='100%' 
+                    />
+                    <button className="prev" onClick={() => changeSlide(-1)}>&#10094;</button>
+                    <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
                 </div>
 
-                <div className="mySlides fade">
-                    <img src="https://place-puppy.com/300x200" alt="temp alt text" />
-                    <div className="text">Caption Two</div>
+                <div className="desc">
+                    <p>{projectsData[index].desc}</p>
+                    <p className="links">
+                        <a href={projectsData[index].repo} alt={projectsData[index].repo}>GitHub</a> | <a href={projectsData[index].site} alt={projectsData[index].site}>Website</a>
+                    </p>
                 </div>
-
-                <div className="mySlides fade">
-                    <img src="https://place-puppy.com/300x300"  alt="temp alt text" />
-                    <div className="text">Caption Three</div>
-                </div>
-
-                <button className="prev" onClick={() => plusSlides(-1)}> &#10094;</button>
-                <button className="next" onClick={() => plusSlides(1)}>&#10095;</button>
-
             </div>
-            <br />
-
-            <div>
-                <span className="dot" onClick={() => currentSlide(1)}></span> 
-                <span className="dot" onClick={() => currentSlide(2)}></span> 
-                <span className="dot" onClick={() => currentSlide(3)}></span> 
-            </div> */}
         </div>
     )
 }

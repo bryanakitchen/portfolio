@@ -1,3 +1,8 @@
+// .App-container {
+//   width: 100vw;
+//   border: solid pink 2px;
+// }
+
 .Landing {
   text-align: center;
 }
@@ -14,6 +19,7 @@
     .arrow {
       position:absolute;
       bottom: 0;
+      cursor: pointer;
       animation-name: bounce;
       animation-duration: 0.7s;
       animation-direction: alternate;
@@ -67,30 +73,29 @@
   .title {
     margin: 0;
   }
-
 }
 
 .footer {
   background-color: #fff;
   color: #141c3a;
-  // background-color: #141c3a;
-  // color: #fff;
   padding: 10px 10px 20px 10px;
   text-align: center;
 }
 
-
 // @media (max-width: 1024px) {
 //   .Landing {
-//     // border: solid pink 3px;
+//     border: solid purple 5px;
 //     // max-width: fit-content;
 //   }
 // }
 
 @media (max-width: 992px) {
   .Landing {
+        // border: solid pink 3px;
+        // width: 95vw;
+
     .arrow {
-      margin-bottom: 15px;
+      margin-bottom: 8vh;
     }
   }
 
@@ -119,7 +124,7 @@
     }
 
     .title {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
@@ -127,4 +132,20 @@
     font-size: 0.9rem;
   }
 
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 823px) {
+  .Landing {
+    .arrow {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer {
+    margin: 0;
+    padding: 0 0 3px 0;
+    font-size: 14px;
+  }
 }

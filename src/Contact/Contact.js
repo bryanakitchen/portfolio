@@ -5,7 +5,10 @@ export default function Contact() {
     return (
         <div className="Contact" name="contact">
             <div className="inner">
+                <div className="content">
+
                 <p>Let's connect</p>
+
                 <p>
                     <a href="mailto: bryanakitchen@gmail.com">
                         <img src="./email-dark.png" alt="icon link to Bryana's email" />
@@ -31,6 +34,8 @@ export default function Contact() {
                         Resume
                     </a>
                 </p>
+                </div>
+
             </div>
         </div>
     )

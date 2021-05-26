@@ -6,7 +6,7 @@
 }
 
 .Mission {
-    min-height: 70vh;
+    min-height: 50vh;
     margin: 0;
     padding: 0;
 
@@ -20,7 +20,6 @@
     .inner {
         width: 80vw;
         height: 45vh;
-        margin-top: -20vh;
         background-color: #fff;
         text-align: center;
         
@@ -65,7 +64,7 @@
 @media (max-width: 600px) {
     .Mission {
         .inner {
-            height: 60vh;
+            height: 50vh;
 
             p {
                 width: 90%;
@@ -77,4 +76,19 @@
             }
         }
     }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 823px) {
+  .Mission {
+      .inner {
+          height: 70vh;
+      
+          p {
+              font-size: 1.1rem;
+              margin: 0 0 5vh 0;
+          }
+      }
+  }
 }

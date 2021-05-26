@@ -11,7 +11,6 @@
     padding: 0;
 
     background-color: #fff;
-    // background-color: #141c3a;
     color: #141c3a;
 
     p {
@@ -47,16 +46,19 @@
         border-radius: 12px;
         box-shadow: 0px 1px 10px rgba(199, 199, 199, 0.452);
 
-        p {
-            width: 22%;
-            display: flex;
-            flex-direction: row;
-        }
-
-        p:first-of-type {
-            font-size: 1.8rem;
-            align-items: center;
-            justify-content: center;    
+        .content {
+            p {
+                display: flex;
+                flex-direction: row;
+                padding: 0.4vh;
+            }
+    
+            p:first-of-type {
+                font-size: 1.8rem;
+                align-items: center;
+                justify-content: center;   
+                padding-bottom: 0.8vh; 
+            }
         }
     }
 }
@@ -64,13 +66,20 @@
 @media (max-width: 992px) {
     .Contact {
         .inner {
-            p {
-                font-size: 1.4rem;
-                margin: 10px;
-            }
-    
-            p:first-of-type {
-                margin-bottom: 20px;
+            width: 85vw;
+            height: 50vh;
+
+            .content {
+                p {
+                    font-size: 1.4rem;
+                    margin: 10px;
+                    width: 38vw;
+                }
+        
+                p:first-of-type {
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -79,15 +88,45 @@
 @media (max-width: 600px) {
     .Contact {
         .inner {
-            p {
-                font-size: 1rem;
-                margin: 5px;
-            }
-    
-            p:first-of-type {
-                font-size: 1.8rem;
-                margin-bottom: 15px;
+            .content {
+                p {
+                    font-size: 1rem;
+                    margin: 5px;
+                    width: 70vw;
+                }
+        
+                p:first-of-type {
+                    font-size: 1.8rem;
+                    margin-bottom: 15px;
+                }
             }
         }
     }
+}
+
+
+@media screen and (orientation:landscape)
+and (min-device-width: 568px) 
+and (max-device-width: 823px) {
+   .Contact {
+       height: 70vh;
+
+       .inner {
+           height: 60vh;
+           margin-top: 7vh;
+
+           .content {
+               p {
+                   width: 25vw;
+                   font-size: 1rem;
+                   margin: 5px;
+               }
+       
+               p:first-of-type {
+                   font-size: 1.5rem;
+                   margin-bottom: 1px;
+               }
+           }
+       }
+   }
 }
