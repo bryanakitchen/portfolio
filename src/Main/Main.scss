@@ -1,8 +1,3 @@
-// .App-container {
-//   width: 100vw;
-//   border: solid pink 2px;
-// }
-
 .Landing {
   text-align: center;
 }
@@ -93,6 +88,8 @@
   .Landing {
         // border: solid pink 3px;
         // width: 95vw;
+        max-width: 100%;
+
 
     .arrow {
       margin-bottom: 8vh;
@@ -106,8 +103,6 @@
 
 @media (max-width: 600px) {
   .Landing {
-    // border: solid yellow 3px;
-
     .arrow {
       margin-bottom: 10px;
     }
