@@ -46,9 +46,12 @@
     }
     
     .slideshow-container {
-      position: relative;
-      margin: auto;
-      
+      width: 75vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+        
       -webkit-animation-name: player;
       -webkit-animation-duration: 1.5s;
       animation-name: player;
@@ -69,30 +72,15 @@
       padding: 0;
       border: none;
       background: none;
-    }
-      
-    .prev, .next {
+
+      margin: 20px;
+      font-size: 1.6rem;
+      color: #fff;
       cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
     }
       
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
     .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
+      color: rgb(201, 198, 198);
     }
     
     @media only screen and (max-width: 300px) {
@@ -107,11 +95,16 @@
 
     .Projects {
       max-width: 100vw;
-    }
-    .slideshow-container {
 
-      width: 80vw;
+      .slideshow-container {
+        width: 90vw;
+  
+        button {
+          font-size: 1.3rem;
+        }
+      }
     }
+
   }
 }
 
@@ -120,8 +113,18 @@
     width: 100vw;
 
     .Projects {
-      width: 95vw;
+      width: 98vw;
+
+      .slideshow-container {
+        width: 95vw;
+  
+        button {
+          font-size: 1rem;
+        }
+      }
     }
+
+
   }
 }
 
