@@ -31,7 +31,7 @@ function Main() {
     }, []);
 
   return (
-    <>
+    <div className="App">
       <Header />
       
       <div className="Landing" name="home">
@@ -58,7 +58,7 @@ function Main() {
       <div className="footer">
           <p>Handcrafted by me &#169; 2021 </p>
       </div>
-    </>
+    </div>
   );
 }
 
