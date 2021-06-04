@@ -7,8 +7,7 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 98vw;
-    // width: 100vw;
+    width: 100vw;
     z-index: 1;
 
     .logo {
@@ -21,6 +20,8 @@
     .nav {
         display: flex;
         align-items: center;
+        position: relative;
+        right: 20px;
 
         a, Link {
             padding: 0px 10px;
@@ -41,32 +42,20 @@
     
 }
 
-
-// @media (max-width: 1024px) {
-//     .Header {
-//     //   border: solid pink 3px;
-//     }
-//   }
-  
 @media (max-width: 992px) {
-
     .Header {
-    //   border: solid orange 3px;
-        width: 95vw;
+        width: 100vw;
         font-size: 18px;
-        // top: 2vh;
 
-        // margin-top: 2vh;
+        .nav {
+            right: 10px;
+        }
     }
-
-    // .headerQuery {
-    //     top: 0;
-    // }
 }
   
 @media (max-width: 600px) {
     .Header {
-        width: 97.5vw;
+        width: 100vw;
         font-size: 14px;
         padding: 5px 5px;
         
