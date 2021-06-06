@@ -23,6 +23,8 @@ export default function Projects() {
                         controls="true"
                         width='100%'
                         height='100%' 
+                        // playing="true"
+                        // muted="true"
                     />
                     <button className="next" onClick={() => changeSlide(1)}>&#10095;</button>
                 </div>

@@ -5,8 +5,8 @@
   justify-content: flex-start;
   background-color: #141c3a;
   color: #fff;
-  min-height: 140vh;
-  padding-top: 8vh;
+  min-height: 110vh;
+  padding-top: 10vh;
 
   .Projects {
     width: 60vw;
@@ -18,7 +18,6 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
 
     h2 {
       font-weight: normal;
@@ -95,7 +94,7 @@
 
 @media (max-width: 992px) {
   .Projects-Body {
-    min-height: 130vh;
+    min-height: 95vh;
 
     .Projects {
       max-width: 100vw;
@@ -147,4 +146,10 @@ and (max-device-width: 823px) {
         }
       }
    }
+}
+
+@media (min-width: 1365px) {
+  .Projects-Body {
+    min-height: 120vh;
+  }
 }
