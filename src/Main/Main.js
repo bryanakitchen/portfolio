@@ -56,7 +56,7 @@ function Main() {
       <Contact />
       
       <div className="footer">
-          <p>Handcrafted by me &#169; 2021 </p>
+          <p>Handcrafted by me &#169; 2022 </p>
       </div>
     </div>
   );
